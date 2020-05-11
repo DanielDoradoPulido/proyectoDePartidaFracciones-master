@@ -50,5 +50,5 @@ public class Fraccion {
 		sb.append(numerador).append(" / ").append(denominador);
 		return sb.toString();
 	}
-
+	
 }
