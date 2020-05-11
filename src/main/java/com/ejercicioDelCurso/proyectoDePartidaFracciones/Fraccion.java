@@ -13,12 +13,12 @@ public class Fraccion {
 	public static Fraccion simplifica(Fraccion entrada) {}
 
 	public static void suma(Fraccion sumando1, Fraccion sumando2) {
-		int numeradorN = sumando1.getNumerador()*sumando2*getDenominador() + 
-						 sumando2.getNumerador()*sumando1.getDenominador();
+		int numN = sumando1.getNumerador()*sumando2*getDenominador() + 
+				sumando2.getNumerador()*sumando1.getDenominador();
 		
-		int denominadorN = sumando1.getDenominador()*sumando2.getDenominador();
+		int denN = sumando1.getDenominador()*sumando2.getDenominador();
 		
-		Fraccion suma=new Fraccion(numeradorN,denominador);
+		Fraccion suma=new Fraccion(numN,denN);
 	
 		Fraccion.simplifica(suma);
 			
