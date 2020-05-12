@@ -1,4 +1,4 @@
-package suma;
+package descom;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -9,12 +9,11 @@ import javax.swing.border.EmptyBorder;
 
 import interfazGrafica.interfazGrafica;
 
-import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class sumaFacil extends JFrame {
+public class descomNormal extends JFrame {
 
 	private JPanel contentPane;
 
@@ -25,7 +24,7 @@ public class sumaFacil extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					sumaFacil frame = new sumaFacil();
+					descomNormal frame = new descomNormal();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -37,31 +36,25 @@ public class sumaFacil extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public sumaFacil() {
-		setTitle("MathApp - Operaciones Con Suma(Facil)");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	public descomNormal() {
+		setTitle("MathApp - Operaciones de Descomposicion  (Normal)");
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("facil");
-		lblNewLabel.setBounds(87, 36, 217, 14);
-		contentPane.add(lblNewLabel);
-		
-		JButton exit = new JButton("salir");
-		exit.addActionListener(new ActionListener() {
+		JButton btnNewButton = new JButton("salir");
+		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 				setVisible(false);
 				interfazGrafica atras = new interfazGrafica();
 				atras.setVisible(true);
-				
 			}
 		});
-		exit.setBounds(159, 208, 89, 23);
-		contentPane.add(exit);
+		btnNewButton.setBounds(157, 213, 89, 23);
+		contentPane.add(btnNewButton);
 	}
 
 }

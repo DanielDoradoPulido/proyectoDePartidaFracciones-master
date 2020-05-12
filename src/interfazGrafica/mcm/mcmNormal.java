@@ -9,12 +9,11 @@ import javax.swing.border.EmptyBorder;
 
 import interfazGrafica.interfazGrafica;
 
-import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class mcmFacil extends JFrame {
+public class mcmNormal extends JFrame {
 
 	private JPanel contentPane;
 
@@ -25,7 +24,7 @@ public class mcmFacil extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					mcmFacil frame = new mcmFacil();
+					mcmNormal frame = new mcmNormal();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -37,31 +36,25 @@ public class mcmFacil extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public mcmFacil() {
-		setTitle("MathApp - Operaciones de Minimo Comun Multiplo  (Facil)");
+	public mcmNormal() {
+		setTitle("MathApp - Operaciones de Minimo Comun Multiplo  (Normal)");
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("facil");
-		lblNewLabel.setBounds(173, 43, 46, 14);
-		contentPane.add(lblNewLabel);
-		
-		JButton exit = new JButton("salir");
-		exit.addActionListener(new ActionListener() {
+		JButton btnNewButton = new JButton("salir");
+		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
 				
 				setVisible(false);
 				interfazGrafica atras = new interfazGrafica();
 				atras.setVisible(true);
-				
 			}
 		});
-		exit.setBounds(173, 199, 89, 23);
-		contentPane.add(exit);
+		btnNewButton.setBounds(163, 227, 89, 23);
+		contentPane.add(btnNewButton);
 	}
 
 }

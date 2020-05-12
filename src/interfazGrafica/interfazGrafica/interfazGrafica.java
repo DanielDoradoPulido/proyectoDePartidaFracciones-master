@@ -42,7 +42,7 @@ public class interfazGrafica extends JFrame {
 	 */
 	public interfazGrafica() {
 		setBackground(new Color(0, 204, 255));
-		setTitle("MathApp");
+		setTitle("MathApp- Menu Principal");
 		setBounds(100, 100, 1005, 558);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(51, 204, 255));
@@ -61,9 +61,9 @@ public class interfazGrafica extends JFrame {
 		lblNewLabel_1.setBounds(94, 132, 824, 34);
 		contentPane.add(lblNewLabel_1);
 		
-		JLabel lblNewLabel_2 = new JLabel("\u00A1Cuantos mas aciertos tengas mas puntos tendras y podras acceder a mayores retos!");
+		JLabel lblNewLabel_2 = new JLabel("¡Intente superar todos los niveles posibles, y seras el rey de las Mates!");
 		lblNewLabel_2.setFont(new Font("Source Serif Pro Semibold", Font.PLAIN, 16));
-		lblNewLabel_2.setBounds(190, 177, 619, 23);
+		lblNewLabel_2.setBounds(239, 177, 619, 23);
 		contentPane.add(lblNewLabel_2);
 		
 		JButton descomposicionPrimo = new JButton("Descomposicion numeros primos");

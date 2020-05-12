@@ -40,8 +40,7 @@ public class nivelDificultad extends JFrame {
 	 * Create the frame.
 	 */
 	public nivelDificultad() {
-		setTitle("MathApp");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("MathApp- Eleccion de Dificultad");
 		setBounds(100, 100, 707, 398);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(0, 255, 153));
@@ -76,7 +75,7 @@ public class nivelDificultad extends JFrame {
 				
 				else if(interfazGrafica.tipo.contentEquals("division")) {
 					
-					suma.sumaFacil sf = new suma.sumaFacil();
+					div.divFacil sf = new div.divFacil();
 					sf.setVisible(true);
 					setVisible(false);
 					
@@ -84,7 +83,7 @@ public class nivelDificultad extends JFrame {
 				
 				else if(interfazGrafica.tipo.contentEquals("multiplicacion")) {
 					
-					suma.sumaFacil sf = new suma.sumaFacil();
+					multi.multiFacil sf = new multi.multiFacil();
 					sf.setVisible(true);
 					setVisible(false);
 					
@@ -92,7 +91,7 @@ public class nivelDificultad extends JFrame {
 				
 				else if(interfazGrafica.tipo.contentEquals("mcd")) {
 					
-					suma.sumaFacil sf = new suma.sumaFacil();
+					mcd.mcdFacil sf = new mcd.mcdFacil();
 					sf.setVisible(true);
 					setVisible(false);
 					
@@ -108,14 +107,13 @@ public class nivelDificultad extends JFrame {
 				
 				else if(interfazGrafica.tipo.contentEquals("descomposicion")) {
 					
-					suma.sumaFacil sf = new suma.sumaFacil();
+					descom.descomFacil sf = new descom.descomFacil();
 					sf.setVisible(true);
 					setVisible(false);
 					
 				}
 					
 				
-				setVisible(false);
 				
 			}
 		});
@@ -133,7 +131,54 @@ public class nivelDificultad extends JFrame {
 					setVisible(false);
 					
 				}
-				setVisible(false);
+				
+				else if(interfazGrafica.tipo.contentEquals("mcm")) {
+					
+					mcm.mcmNormal sf = new mcm.mcmNormal();
+					sf.setVisible(true);
+					setVisible(false);
+					
+				}
+				
+				else if(interfazGrafica.tipo.contentEquals("division")) {
+					
+					div.divNormal sf = new div.divNormal();
+					sf.setVisible(true);
+					setVisible(false);
+					
+				}
+				
+				else if(interfazGrafica.tipo.contentEquals("multiplicacion")) {
+					
+					multi.multiNormal sf = new multi.multiNormal();
+					sf.setVisible(true);
+					setVisible(false);
+					
+				}
+				
+				else if(interfazGrafica.tipo.contentEquals("mcd")) {
+					
+					mcd.mcdNormal sf = new mcd.mcdNormal();
+					sf.setVisible(true);
+					setVisible(false);
+					
+				}
+				
+				else if(interfazGrafica.tipo.contentEquals("simplificar")) {
+					
+					simplificacion.simpNormal sf = new simplificacion.simpNormal();
+					sf.setVisible(true);
+					setVisible(false);
+					
+				}
+				
+				else if(interfazGrafica.tipo.contentEquals("descomposicion")) {
+					
+					descom.descomNormal sf = new descom.descomNormal();
+					sf.setVisible(true);
+					setVisible(false);
+					
+				}
 			}
 		});
 		normal.setBounds(297, 206, 89, 23);
@@ -150,7 +195,54 @@ public class nivelDificultad extends JFrame {
 					setVisible(false);
 					
 				}
-				setVisible(false);
+				
+				else if(interfazGrafica.tipo.contentEquals("mcm")) {
+					
+					mcm.mcmDificil sf = new mcm.mcmDificil();
+					sf.setVisible(true);
+					setVisible(false);
+					
+				}
+				
+				else if(interfazGrafica.tipo.contentEquals("division")) {
+					
+					div.divDificil sf = new div.divDificil();
+					sf.setVisible(true);
+					setVisible(false);
+					
+				}
+				
+				else if(interfazGrafica.tipo.contentEquals("multiplicacion")) {
+					
+					multi.multiDificil sf = new multi.multiDificil();
+					sf.setVisible(true);
+					setVisible(false);
+					
+				}
+				
+				else if(interfazGrafica.tipo.contentEquals("mcd")) {
+					
+					mcd.mcdDificil sf = new mcd.mcdDificil();
+					sf.setVisible(true);
+					setVisible(false);
+					
+				}
+				
+				else if(interfazGrafica.tipo.contentEquals("simplificar")) {
+					
+					simplificacion.simpDificil sf = new simplificacion.simpDificil();
+					sf.setVisible(true);
+					setVisible(false);
+					
+				}
+				
+				else if(interfazGrafica.tipo.contentEquals("descomposicion")) {
+					
+					descom.descomDificil sf = new descom.descomDificil();
+					sf.setVisible(true);
+					setVisible(false);
+					
+				}
 			}
 		});
 		dificil.setBounds(500, 206, 89, 23);
@@ -167,5 +259,11 @@ public class nivelDificultad extends JFrame {
 		atras.setBounds(297, 298, 89, 23);
 		contentPane.add(atras);
 	}
+
+
+
+
+
+	
 
 }

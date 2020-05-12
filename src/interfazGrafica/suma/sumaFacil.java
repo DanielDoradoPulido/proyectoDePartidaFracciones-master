@@ -1,4 +1,4 @@
-package mcm;
+package suma;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -14,7 +14,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class mcmFacil extends JFrame {
+public class sumaFacil extends JFrame {
 
 	private JPanel contentPane;
 
@@ -25,7 +25,7 @@ public class mcmFacil extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					mcmFacil frame = new mcmFacil();
+					sumaFacil frame = new sumaFacil();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -37,8 +37,8 @@ public class mcmFacil extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public mcmFacil() {
-		setTitle("MathApp - Operaciones de Minimo Comun Multiplo  (Facil)");
+	public sumaFacil() {
+		setTitle("MathApp - Operaciones Con Suma(Facil)");
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -46,13 +46,12 @@ public class mcmFacil extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("facil");
-		lblNewLabel.setBounds(173, 43, 46, 14);
+		lblNewLabel.setBounds(87, 36, 217, 14);
 		contentPane.add(lblNewLabel);
 		
 		JButton exit = new JButton("salir");
 		exit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
 				
 				setVisible(false);
 				interfazGrafica atras = new interfazGrafica();
@@ -60,7 +59,7 @@ public class mcmFacil extends JFrame {
 				
 			}
 		});
-		exit.setBounds(173, 199, 89, 23);
+		exit.setBounds(159, 208, 89, 23);
 		contentPane.add(exit);
 	}
 
