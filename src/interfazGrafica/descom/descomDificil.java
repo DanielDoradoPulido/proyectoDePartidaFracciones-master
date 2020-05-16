@@ -4,7 +4,9 @@ import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 import interfazGrafica.interfazGrafica;
@@ -12,10 +14,38 @@ import interfazGrafica.interfazGrafica;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 
 public class descomDificil extends JFrame {
 
 	private JPanel contentPane;
+	private JTextField numAI;
+	private JTextField denAI;
+	private JLabel lblNewLabel_2;
+	private JTextField numAD;
+	private JTextField denAD;
+	private JLabel lblNewLabel_3;
+	private JLabel lblNewLabel_4;
+	private JLabel lblNewLabel_5;
+	private JLabel lblNewLabel_6;
+	private JTextField numABI;
+	private JTextField denABI;
+	private JTextField numABD;
+	private JTextField denABD;
+	private JLabel lblNewLabel_11;
+	private JLabel lblNewLabel_12;
+	private JLabel lblNewLabel_13;
+	private JLabel lblNewLabel_14;
+	private JLabel lblNewLabel_15;
+	private JLabel lblNewLabel_16;
+	private JLabel lblNewLabel_17;
+	private JLabel lblNewLabel_18;
+	private JLabel lblNewLabel_19;
+	private JLabel lblNewLabel_20;
+	private JLabel lblNewLabel_21;
+	private JLabel lblNewLabel_22;
+	private JLabel lblNewLabel_23;
+	private JLabel lblNewLabel_24;
 
 	/**
 	 * Launch the application.
@@ -38,8 +68,9 @@ public class descomDificil extends JFrame {
 	 */
 	public descomDificil() {
 		setTitle("MathApp - Operaciones de Descomposicion  (Dificil)");
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 797, 428);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 102, 102));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -53,7 +84,7 @@ public class descomDificil extends JFrame {
 				
 			}
 		});
-		btnNewButton.setBounds(155, 205, 89, 23);
+		btnNewButton.setBounds(342, 355, 89, 23);
 		contentPane.add(btnNewButton);
 	}
 
