@@ -3,6 +3,7 @@ package mcm;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.Font;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -19,33 +20,19 @@ import java.awt.event.ActionEvent;
 public class mcmFacil extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField numAI;
-	private JTextField denAI;
-	private JLabel lblNewLabel_2;
-	private JTextField numAD;
-	private JTextField denAD;
+	private JTextField resultadoAI;
+	private JTextField resultadoAD;
 	private JLabel lblNewLabel_3;
-	private JLabel lblNewLabel_4;
 	private JLabel lblNewLabel_5;
 	private JLabel lblNewLabel_6;
-	private JTextField numABI;
-	private JTextField denABI;
-	private JTextField numABD;
-	private JTextField denABD;
-	private JLabel lblNewLabel_11;
-	private JLabel lblNewLabel_12;
+	private JTextField resultadoABI;
+	private JTextField resultadoABD;
 	private JLabel lblNewLabel_13;
 	private JLabel lblNewLabel_14;
-	private JLabel lblNewLabel_15;
-	private JLabel lblNewLabel_16;
 	private JLabel lblNewLabel_17;
 	private JLabel lblNewLabel_18;
-	private JLabel lblNewLabel_19;
-	private JLabel lblNewLabel_20;
 	private JLabel lblNewLabel_21;
 	private JLabel lblNewLabel_22;
-	private JLabel lblNewLabel_23;
-	private JLabel lblNewLabel_24;
 
 	/**
 	 * Launch the application.
@@ -76,10 +63,6 @@ public class mcmFacil extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("facil");
-		lblNewLabel.setBounds(173, 43, 46, 14);
-		contentPane.add(lblNewLabel);
-		
 		JButton exit = new JButton("salir");
 		exit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -93,6 +76,57 @@ public class mcmFacil extends JFrame {
 		});
 		exit.setBounds(342, 355, 89, 23);
 		contentPane.add(exit);
+		
+		//inputs y labels
+		
+		
+		JLabel lblNewLabel_1 = new JLabel("M.C.M (5   Y   10)");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		lblNewLabel_1.setBounds(70, 136, 153, 14);
+		contentPane.add(lblNewLabel_1);
+		
+		
+		lblNewLabel_3 = new JLabel("M.C.M (3   Y   18)");
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		lblNewLabel_3.setBounds(451, 136, 145, 14);
+		contentPane.add(lblNewLabel_3);
+		
+		lblNewLabel_5 = new JLabel("M.C.M (3  Y   15)");
+		lblNewLabel_5.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		lblNewLabel_5.setBounds(70, 273, 153, 14);
+		contentPane.add(lblNewLabel_5);
+		
+		lblNewLabel_6 = new JLabel("M.C.M (2   Y   6)");
+		lblNewLabel_6.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		lblNewLabel_6.setBounds(451, 273, 145, 14);
+		contentPane.add(lblNewLabel_6);
+		
+		//INPUTS DEL USUARIO
+		
+		resultadoAI = new JTextField();
+		resultadoAI.setBounds(233, 136, 86, 20);
+		contentPane.add(resultadoAI);
+		resultadoAI.setColumns(10);
+		
+		resultadoAD = new JTextField();
+		resultadoAD.setBounds(602, 136, 86, 20);
+		contentPane.add(resultadoAD);
+		resultadoAD.setColumns(10);
+		
+		resultadoABI = new JTextField();
+		resultadoABI.setBounds(233, 273, 86, 20);
+		contentPane.add(resultadoABI);
+		resultadoABI.setColumns(10);
+		
+		resultadoABD = new JTextField();
+		resultadoABD.setBounds(602, 273, 86, 20);
+		contentPane.add(resultadoABD);
+		resultadoABD.setColumns(10);
+		
+		JLabel lblNewLabel = new JLabel("CALCULE EL MINIMO COMUN MULTIPLO");
+		lblNewLabel.setFont(new Font("Noto Serif Cond", Font.PLAIN, 26));
+		lblNewLabel.setBounds(159, 25, 692, 71);
+		contentPane.add(lblNewLabel);
 	}
 
 }

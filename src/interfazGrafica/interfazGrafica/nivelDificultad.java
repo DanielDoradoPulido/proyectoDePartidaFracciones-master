@@ -117,72 +117,8 @@ public class nivelDificultad extends JFrame {
 				
 			}
 		});
-		btnNewButton.setBounds(91, 206, 89, 23);
+		btnNewButton.setBounds(155, 183, 89, 35);
 		contentPane.add(btnNewButton);
-		
-		JButton normal = new JButton("normal");
-		normal.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-				if(interfazGrafica.tipo.contentEquals("suma")) {
-					
-					suma.sumaNormal sf = new suma.sumaNormal();
-					sf.setVisible(true);
-					setVisible(false);
-					
-				}
-				
-				else if(interfazGrafica.tipo.contentEquals("mcm")) {
-					
-					mcm.mcmNormal sf = new mcm.mcmNormal();
-					sf.setVisible(true);
-					setVisible(false);
-					
-				}
-				
-				else if(interfazGrafica.tipo.contentEquals("division")) {
-					
-					div.divNormal sf = new div.divNormal();
-					sf.setVisible(true);
-					setVisible(false);
-					
-				}
-				
-				else if(interfazGrafica.tipo.contentEquals("multiplicacion")) {
-					
-					multi.multiNormal sf = new multi.multiNormal();
-					sf.setVisible(true);
-					setVisible(false);
-					
-				}
-				
-				else if(interfazGrafica.tipo.contentEquals("mcd")) {
-					
-					mcd.mcdNormal sf = new mcd.mcdNormal();
-					sf.setVisible(true);
-					setVisible(false);
-					
-				}
-				
-				else if(interfazGrafica.tipo.contentEquals("simplificar")) {
-					
-					simplificacion.simpNormal sf = new simplificacion.simpNormal();
-					sf.setVisible(true);
-					setVisible(false);
-					
-				}
-				
-				else if(interfazGrafica.tipo.contentEquals("descomposicion")) {
-					
-					descom.descomNormal sf = new descom.descomNormal();
-					sf.setVisible(true);
-					setVisible(false);
-					
-				}
-			}
-		});
-		normal.setBounds(297, 206, 89, 23);
-		contentPane.add(normal);
 		
 		JButton dificil = new JButton("dificil");
 		dificil.addActionListener(new ActionListener() {
@@ -245,7 +181,7 @@ public class nivelDificultad extends JFrame {
 				}
 			}
 		});
-		dificil.setBounds(500, 206, 89, 23);
+		dificil.setBounds(417, 183, 89, 35);
 		contentPane.add(dificil);
 		
 		JButton atras = new JButton("atras");
@@ -256,7 +192,7 @@ public class nivelDificultad extends JFrame {
 				atras.setVisible(true);
 			}
 		});
-		atras.setBounds(297, 298, 89, 23);
+		atras.setBounds(284, 298, 89, 23);
 		contentPane.add(atras);
 	}
 
